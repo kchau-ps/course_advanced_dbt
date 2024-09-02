@@ -9,6 +9,10 @@ This section contains documentation from the Bingeflix Users table.
 This table contains information about the behavioral events of users while they interact with the Bingeflix platform. It includes events such as logins, logouts, videos watched, and CTA/button clicks.
 {% enddocs %}
 
+{% docs bingeflix_table_fct_events %}
+This table contains information about the behavioral events of users while they interact with the Bingeflix platform. It includes events such as logins, logouts, videos watched, and CTA/button clicks.
+{% enddocs %}
+
 {% docs bingeflix_table_subscriptions %}
 This table contains subscription-related information, such as subscription plan IDs, subscription start dates, renewal dates, billing information, and any other relevant subscription details.
 {% enddocs %}
