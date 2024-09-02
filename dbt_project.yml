@@ -41,7 +41,14 @@ models:
 
 seeds:
   dbt_project_evaluator:
+    +docs:
+      show: false
     dbt_project_evaluator_exceptions:
       +enabled: false
 
-# on-run-end: "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues() }}"
+on-run-end: "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues(format='table') }}"
+
+vars:
+  exclude_paths_from_project: ["/models/legacy/"]
+  dbt_project_evaluator:
+    models_fanout_threshold: 10
