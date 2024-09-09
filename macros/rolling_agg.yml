@@ -1,0 +1,21 @@
+version: 2
+
+macros:
+  - name: rolling_agg
+    description: Generalized rolling aggregation function
+    arguments:
+      - name: column_name
+        type: string
+        description: Column to perform aggregation functions on
+      - name: agg_func
+        type: string
+        description: Aggregation function to perform (avg, sum, min, max, etc.)
+      - name: partition_by
+        type: string
+        description: Columns to aggregate column by
+      - name: period_len
+        type: integer
+        description: Length of rolling period
+      - name: order_by
+        type: string
+        description: Date column to perform rolling aggregation over
