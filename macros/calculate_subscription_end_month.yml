@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: calculate_subscription_end_month
+    description: Calculates a user's last month of subscription
+    arguments:
+      - name: start_date
+        type: string
+        description: Column to perform aggregation functions on
+      - name: end_date
+        type: string
+        description: Aggregation function to perform (avg, sum, min, max, etc.)
