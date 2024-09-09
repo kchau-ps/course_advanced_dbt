@@ -132,7 +132,7 @@ The unique identifier of the ad campaign
 {% enddocs %}
 
 {% docs bingeflix_column_ad_spend %}
-The amount spent on the ad campaign 
+The amount spent on the ad campaign
 {% enddocs %}
 
 {% docs bingeflix_column_ad_cpm %}
